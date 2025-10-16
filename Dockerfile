@@ -12,9 +12,7 @@ FROM python:3.11.13-slim-trixie AS runner-image
 # envs
 ENV PYTHONUNBUFFERED=1
 
-# RUN apt-get update && apt-get install --no-install-recommends -y libpq-dev supervisor && \
-# 	apt-get clean && rm -rf /var/lib/apt/lists/*
-
+# install packages
 RUN pip install --upgrade --no-cache-dir setuptools supervisor
 
 # add worker user
