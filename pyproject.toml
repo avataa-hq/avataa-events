@@ -1,0 +1,46 @@
+[project]
+name = "event-manager"
+version = "3.0.10"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp==3.8.6",
+    "alembic==1.7.4",
+    "asyncpg==0.27.0",
+    "cachetools==6.1.0",
+    "confluent-kafka[protobuf,schemaregistry]==2.11.0",
+    "elasticsearch==8.17.2",
+    "fastapi==0.116.1",
+    "grpcio==1.59.2",
+    "grpcio-tools==1.59.2",
+    "protobuf==4.25.3",
+    "psycopg2-binary==2.9.10",
+    "pydantic==2.11.7",
+    "pyjwt[crypto]==2.10.1",
+    "python-multipart==0.0.20",
+    "redis==6.2.0",
+    "requests==2.32.4",
+    "resistant-kafka-avataa==0.9.8b8",
+    "sqlalchemy[asyncio]==2.0.41",
+    "sqlmodel==0.0.24",
+    "uvicorn==0.35.0",
+]
+
+[dependency-groups]
+dev = [
+]
+lint = [
+    "ruff==0.12.3",
+]
+tests = [
+]
+security = [
+    "pip-audit==2.7.3",
+]
+migrations = [
+    "alembic==1.7.4",
+    "psycopg2-binary==2.9.10",
+    "sqlmodel==0.0.24",
+    "asyncpg==0.27.0",
+]
