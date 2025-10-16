@@ -1,3 +1,5 @@
+name: avataa-platform
+
 # x-logging: &logging
 #   logging:
 #     driver: loki
